@@ -26,7 +26,9 @@ struct ServiceInput
     std::string pg_config_folder;    // postgres.conf; hba.conf here
     std::string os_name;
 
+    //
     // Installation information
+    //
     std::string service_name;
     ScriptType script;
 };
@@ -34,6 +36,14 @@ struct ServiceInput
 struct ServiceOutput
 {
     std::string file_service_run;        // Fileoutput    
+};
+
+struct PostgresConfig
+{
+    std::string data_path;
+    std::string pid_file;
+    std::string unix_domain_socket;
+    int port;
 };
 
 #endif

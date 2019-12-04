@@ -1,0 +1,6 @@
+
+DATA_PATH=/var/lib/postgresql/9.4/main
+EXECUTE_PATH=/usr/bin/postgresql/9.4/bin/
+CONFIG_PATH=/etc/postgresql/9.6/main/
+
+$EXECUTE_PATH/postgres -D $CONFIG_PATH >
