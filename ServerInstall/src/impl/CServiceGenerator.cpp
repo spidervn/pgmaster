@@ -7,6 +7,7 @@
 #include <regex>
 
 #include "interface/IPgConfParser.h"
+#include "interface/ISystemInquiry.h"
 
 using namespace std;
 
@@ -33,6 +34,7 @@ int CServiceGenerator::GenerateService(ServiceInput inp, ServiceOutput out)
     std::string strConf;
     std::string path_data;
     PostgresConfig config;
+    PostgresLocal pg;           // Postgres installation on this Server
 
     if (!fconf.is_open())
     {
@@ -57,7 +59,25 @@ int CServiceGenerator::GenerateService(ServiceInput inp, ServiceOutput out)
     //    1. Generate script for run
     //    2. Write script to file.
     //
-    
+    ISystemInquiryPtr sip;
+    sip->locatePostgres(pg);
+
+    /* 
+     * Generate information from
+     *    PostgresInstance
+     *      Exe-Path
+     *    
+     *    DatabaseConfig:
+     *      ConfigPath.
+     *      HBA Path.
+     *      Data-Path.
+     *      PID File.
+     * 
+     */
+    // 
+    // 
+
+    /* Generate to file */
     
 
     return 0;
