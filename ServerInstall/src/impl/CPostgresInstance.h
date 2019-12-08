@@ -10,6 +10,7 @@ private:
     /* data */
     std::string the_bin_path;
     bool isValid;
+    std::string version;
 public:
     CPostgresInstance(std::string bin_path);
     virtual ~CPostgresInstance();
