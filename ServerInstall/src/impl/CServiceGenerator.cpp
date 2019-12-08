@@ -78,7 +78,7 @@ int CServiceGenerator::GenerateService(ServiceInput inp, ServiceOutput out)
     // 
 
     /* Generate to file */
-    
+
 
     return 0;
 }
