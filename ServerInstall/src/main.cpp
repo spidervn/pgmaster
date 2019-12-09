@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "interface/ISystemInquiry.h"
+#include "impl/CSystemIOUbuntu.h"
 
 #include <string>
 using namespace std;
@@ -7,11 +8,11 @@ using namespace std;
 int main(int argc, char const* argv[])
 {
     string exe;
-    ISystemInquiryPtr sip;
+    string r;
 
-    sip->findExecutable(exe);
-    
+    ISystemIOPtr siop = CSystemIOUbuntuPtrNew;
+    r = siop->shellex("/usr/local/pgsql/bin/postgres -V");
+    printf("%s\r\n", r.c_str());
 
     return 0;
 }
-

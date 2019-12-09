@@ -9,11 +9,14 @@
 
 #define ARRAYLEN(a) (sizeof(a)/sizeof(a[0]))
 
+//@Temp
+/*
 std::string OfficialVersions[] {
     "9.4",
     "9.5",
     "9.6"
 };
+*/
 
 enum OS 
 {

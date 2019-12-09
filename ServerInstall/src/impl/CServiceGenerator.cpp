@@ -20,7 +20,7 @@ CServiceGenerator::~CServiceGenerator()
 {
 }
 
-int CServiceGenerator::GenerateService(ServiceInput inp, ServiceOutput out)
+int CServiceGenerator::GenerateService(ServiceInput inp,  PostgresLocal postgrse, ServiceOutput out)
 {
     /* 
      * 
