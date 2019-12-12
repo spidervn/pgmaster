@@ -11,7 +11,7 @@ public:
     CServiceGenerator(/* args */);
     virtual ~CServiceGenerator();
 
-    int GenerateService(ServiceInput inp, PostgresLocal postgrse, ServiceOutput out);
+    int GenerateService(ServiceInput inp, PostgresBinary postgrse, ServiceOutput out);
 };
 
 #endif

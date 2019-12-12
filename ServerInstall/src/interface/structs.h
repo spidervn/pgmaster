@@ -49,7 +49,7 @@ struct ServiceOutput
     std::string file_service_run;        // Fileoutput    
 };
 
-struct PostgresConfig
+struct PostgresDBConfig
 {
     std::string data_path;
     std::string pid_file;
@@ -58,13 +58,10 @@ struct PostgresConfig
 };
 
 // Local information about Postgres
-struct PostgresLocal
+struct PostgresBinary
 {
     std::string exe_path;   // Executable path of postgres
     std::string version;    
-
-
 };
-
 
 #endif

@@ -9,7 +9,7 @@ private:
     /* data */
 public:
     virtual ~IServiceGenerator() {}
-    virtual int GenerateService(ServiceInput inp, PostgresLocal postgres, ServiceOutput out) = 0;    // File script will 
+    virtual int GenerateService(ServiceInput inp, PostgresBinary postgres, ServiceOutput out) = 0;    // File script will 
 };
 
 #endif

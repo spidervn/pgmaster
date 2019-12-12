@@ -4,6 +4,7 @@
 #include <string>
 #include <memory>
 #include "structs.h"
+#include <vector>
 
 class ISystemInquiry
 {
@@ -13,7 +14,7 @@ public:
     virtual ~ISystemInquiry() {}
 
     virtual int findExecutable(std::string& pathfound, std::string version = "9.6") = 0;
-    virtual int locatePostgres(PostgresLocal& postgres, std::string version="9.6") = 0;
+    virtual int locatePostgres(std::vector<PostgresBinary>& vAlternatives, std::string version="9.6") = 0;
 };
 
 typedef std::shared_ptr<ISystemInquiry> ISystemInquiryPtr;

@@ -21,17 +21,15 @@ int CPostgresInstance::initialize(std::string bin_path)
     bool bValid = true;
 
     ifstream f_pgctl(bin_path + "/pg_ctl");
-    bValid &= f_pgctl.good();
-
-    
+    bValid &= f_pgctl.good();   
 }
 
 bool CPostgresInstance::isValidInstance()
 {
-
+    return true;
 }
 
 std::string CPostgresInstance::getVersion()
 {
-
+    return "";
 }

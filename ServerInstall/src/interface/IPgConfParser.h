@@ -14,7 +14,7 @@ public:
 
     virtual int load(std::string pgconf) = 0;   // postgresql.conf
     virtual int GetDataPath(std::string& path) = 0;
-    virtual int GetConfig(PostgresConfig& conf) = 0;
+    virtual int GetConfig(PostgresDBConfig& conf) = 0;
 };
 
 typedef std::shared_ptr<IPgConfParser> IPgConfParserPtr;

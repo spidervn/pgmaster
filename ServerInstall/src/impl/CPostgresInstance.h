@@ -3,8 +3,11 @@
 
 #include "interface/IPostgresInstance.h"
 #include <string>
+#include <memory>
 
-class CPostgresInstance
+#define CPostgresInstancePtrNew(path) std::make_shared<CPostgresInstance>(path)
+
+class CPostgresInstance: public IPostgresInstance
 {
 private:
     /* data */
@@ -20,4 +23,4 @@ public:
     std::string getVersion();
 };
 
-#endif
+#endif 

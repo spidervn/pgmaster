@@ -20,21 +20,20 @@ CServiceGenerator::~CServiceGenerator()
 {
 }
 
-int CServiceGenerator::GenerateService(ServiceInput inp,  PostgresLocal postgrse, ServiceOutput out)
+int CServiceGenerator::GenerateService(ServiceInput inp,  PostgresBinary postgrse, ServiceOutput out)
 {
     /* 
      * 
      * Read whole file.
      * 
      */
-
     std::string data_directory;
     ifstream fconf(inp.pg_config_folder);
     std::stringstream buff;
     std::string strConf;
     std::string path_data;
-    PostgresConfig config;
-    PostgresLocal pg;           // Postgres installation on this Server
+    PostgresDBConfig config;
+    PostgresBinary pg;           // Postgres installation on this Server
 
     if (!fconf.is_open())
     {
@@ -74,11 +73,8 @@ int CServiceGenerator::GenerateService(ServiceInput inp,  PostgresLocal postgrse
      *      PID File.
      * 
      */
-    // 
-    // 
 
     /* Generate to file */
-
 
     return 0;
 }

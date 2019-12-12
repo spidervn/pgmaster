@@ -12,7 +12,7 @@ int main(int argc, char const* argv[])
 
     ISystemIOPtr siop = CSystemIOUbuntuPtrNew;
     r = siop->shellex("/usr/local/pgsql/bin/postgres -V");
-    printf("%s\r\n", r.c_str());
 
+    printf("%s\r\n", r.c_str());
     return 0;
 }
