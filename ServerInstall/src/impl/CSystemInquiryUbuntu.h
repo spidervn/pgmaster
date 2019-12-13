@@ -12,7 +12,7 @@ public:
     virtual ~CSystemInquiryUbuntu();
 
     int findExecutable(std::string& pathfound, std::string version = "9.6");
-    int locatePostgres(std::vector<PostgresBinary>& vAlternatives, std::string version="9.6");
+    int locatePostgres(std::vector<std::string> vSuggestFolder, std::vector<PostgresBinary>& vAlternatives, std::string version="9.6");
 };
 
 #endif

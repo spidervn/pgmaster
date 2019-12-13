@@ -21,6 +21,8 @@ public:
     int initialize(std::string bin_path);
     bool isValidInstance();
     std::string getVersion();
+
+    PostgresBinary getBinaryInfo();
 };
 
 #endif 
