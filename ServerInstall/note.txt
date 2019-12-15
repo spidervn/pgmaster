@@ -1,0 +1,8 @@
+
+CMake for boost:
+    find_package(Boost 1.72 COMPONENTS filesystem REQUIRED)
+    INCLUDE_DIRECTORIES(${Boost_INCLUDE_DIR})
+    link_directories(${Boost_LIBRARY_DIR})
+    target_link_libraries(pginstall ${Boost_LIBRARIES})
+
+

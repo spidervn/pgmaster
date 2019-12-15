@@ -22,8 +22,6 @@ int CPostgresInstance::initialize(std::string bin_path)
 
     ifstream f_pgctl(bin_path + "/pg_ctl");
     bValid &= f_pgctl.good();
-
-    
 }
 
 bool CPostgresInstance::isValidInstance()
