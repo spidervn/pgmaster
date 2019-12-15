@@ -59,7 +59,6 @@ int CServiceGenerator::GenerateService(ServiceInput inp,  PostgresBinary postgrs
     //    2. Write script to file.
     //
     ISystemInquiryPtr sip;
-    sip->locatePostgres(pg);
 
     /* 
      * Generate information from

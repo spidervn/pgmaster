@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string>
 #include <memory>
+#include <vector>
 
 class ISystemIO
 {
@@ -13,6 +14,8 @@ private:
 public:
     virtual ~ISystemIO() {}
     virtual std::string shellex(std::string cmd) = 0;
+
+    // virtual int find_folder_recursive(std::string folder, std::vector<std::string& v) = 0;
 };
 
 typedef std::shared_ptr<ISystemIO> ISystemIOPtr;
